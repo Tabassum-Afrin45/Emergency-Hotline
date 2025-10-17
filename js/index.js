@@ -41,3 +41,8 @@ for(const callButton of callButtons){
       }
   })
 }
+
+// Clear Button Feature
+document.getElementById("clear-btn").addEventListener('click',function(){
+    document.getElementById("callHistory-Container").innerHTML="";
+})
