@@ -21,9 +21,9 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="hind-madurai-regular">
+<body class="hind-madurai-regular h-full max-w-[1920px]">
   <!-- Navigation bar -->
-  <div class="flex items-center justify-between py-5 px-12">
+  <div class="flex items-center justify-between flex-wrap py-5 px-5 md:px-12 gap-3 md:gap-0">
     <div class="flex items-center">
       <img src="./icons/logo.png" alt="" class="w-[50px] h-[50px]">
       <p class="text-xl font-bold text-[#006747] ml-2">Emergency<br>Service</p>
@@ -38,16 +38,16 @@
   </div>
 
   <!-- Hero Section -->
-  <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] h-[225px] text-center pt-9">
+  <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] h-auto text-center py-9">
     <img src="./icons/logo-dark.png" alt="" class="h-[70px] mx-auto">
-    <p class="text-white text-3xl font-bold my-3">জরুরি সেবা ডিরেক্টরি</p>
-    <p class="text-white">Government Emergency Services at Your Fingertip - A Project by Government of the People's
+    <p class="text-white text-2xl md:text-3xl font-bold my-3">জরুরি সেবা ডিরেক্টরি</p>
+    <p class="text-white px-3">Government Emergency Services at Your Fingertip - A Project by Government of the People's
       Republic of Bangladesh</p>
   </div>
 
   <!-- Main Section -->
-  <div class="bg-[#41ff6b1a] pt-10 px-12 pb-15 grid grid-cols-12 gap-6 h-full">
-    <div class="col-span-9 grid grid-cols-3 gap-6 h-full">
+  <div class="bg-[#41ff6b1a] pt-10 px-5 md:px-12 pb-15 grid grid-cols-12 gap-6">
+    <div class="col-span-full md:col-span-8 lg:col-span-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 h-full">
       <div id="card-1">
         <div class="card bg-base-100 w-auto shadow-sm">
           <div class="card-body">
@@ -247,7 +247,7 @@
         </div>
       </div>
     </div>
-    <div class="col-span-3 h-full card bg-base-100 w-auto shadow-sm">
+    <div class="col-span-full order-first md:order-last lg:order-last md:col-span-4 lg:col-span-3 h-full card bg-base-100 w-auto shadow-sm">
         <div class="flex justify-between items-center m-5">
            <h3 class="font-medium"><i class="fa-regular fa-clock text-gray-500"></i> Call History</h3>
            <button id="clear-btn" class="btn btn-soft  bg-[#00a63e] rounded-3xl text-white w-22">Clear</button>
