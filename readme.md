@@ -1,89 +1,21 @@
-
-## ✅ Main Requirements (50 Marks)
-### 3. Responsiveness (5 Marks)
-
-- Website should be fully **responsive for mobile devices** (implementation up to you)
-
----
-
-## Functionalities
-
-### 5. Call Buttons
-
-- On clicking a card's **Call Button**, following actions will happen:
-  - 1)Show an **alert** with a message including the service name and number
-  - 2)Each call will **cut 20 coins**. Reduce Coin after each click.
-  - If coins are less than 20, show a relevant alert and terminate the process.
-  - 3)Add this service into the **Call History section** with:
-    - Service name
-    - Service number
-
----
-
-### 5. Call History Section
-
-- Show all called services with name & number. This will empty initially. when call button clicked it will filled dynamically.
-- A **Clear History button** on the right
-- Clicking this button will remove all data from call history
-
----
-
-## Create Readme
-
-You have to create a `Readme.md` file. and write down following questions. Dont Try to copy paste from AI Tools. Just write what you know about these. If you don't know , then search , learn , understand and then write.
-
-### 6. Answer the following questions clearly:
-
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+Ans:
+getElementById is used to find a specific html element.While,getElementsByClassName is used to find html elements of same class and querySelector is used to find the first element that matches a specific css selector. Lastly, querySelectorAll is used to find all the elements that matches a specific css selector.
+
 2. How do you **create and insert a new element into the DOM**?
+Ans:
+document.createElement() to create a new element.
+parentElement.appendChild(newElement) to insert that new element.
+
 3. What is **Event Bubbling** and how does it work?
+Ans:
+Event Bubbling is a technique where an event moves from the target element up to the root element. When an event is triggered, it first runs on the target element, then moves to its parent and continues until it reaches the top element.
+
 4. What is **Event Delegation** in JavaScript? Why is it useful?
+Ans:
+Event Delegation is a technique where an event listener is applied to a parent element to handle events on its child elements instead of adding separate listeners to each child. It is useful for handling dynamically added elements and reducing the number of event listeners.
+
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
+Ans:
+preventDefault() is used to stop browser's default behavior.While, stopPropagation() is used to stop the event bubbling up to its parent.
 
----
-
-## 🧪 Challenges Part (10 Marks)
-
-- On clicking the **Copy button**, show an alert and **increase the copy count** (3 Marks)
-
-- Hotline number will be **copied on click** so it can be pasted anywhere (4 Marks)
-
-💡Hint: You can ask for Help from `ChatGPT` Mamma . Just copy the below prompt , generate answer. use it with your own way.
-
-```bash
-I have a card with some text and a button inside it. I want that when a user clicks the button, some specific text from the card is copied to the clipboard using JavaScript. Please provide the code and explain it step by step.
-```
-
-- After clicking on the **Call button**, the **exact time of the call** will be shown in the Call History section (3 Marks)
-
-💡Hint: Search Google with that below question
-
-```bash
-How to get current local time in js
-```
-
----
-
-## ⚙️ Technology Stack
-
-- HTML
-- CSS ( Vanilla , Tailwind CSS , DaisyUI , Others - wheatever you like )
-- JavaScript ( Vanilla only. No Framework / Library Allowed )
-
----
-
-## 📌 Rules
-
-- ✅ Minimum **5 meaningful commits** required
-- ❌ No Lorem Ipsum or dummy placeholder text. Use **relevant content only**
-
----
-
-## 🔗 What to Submit
-
-- 📂 **GitHub Repository**
-- 🌐 **Live Link**
-
----
-
-# Let's Code and Achieve your Dream 🎯
