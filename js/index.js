@@ -28,14 +28,15 @@ for(const callButton of callButtons){
         availableCoins.innerText=coins;
        
         // History Feature
+        const date=new Date().toLocaleTimeString()
         const parentContainer=document.getElementById("callHistory-Container")
         const newDiv=document.createElement("div")
-        newDiv.innerHTML=`        <div class="flex justify-between bg-[#fafafa] p-4 rounded-lg mx-5 mb-5">
+        newDiv.innerHTML=`<div class="flex justify-between bg-[#fafafa] p-4 rounded-lg mx-5 mb-5">
           <div>
             <h3 class="font-semibold">${serviceName}</h3>
              <p class="text-gray-600">${serviceNumber}</p>
           </div>
-          <p class="my-auto ">1:36:58 AM</p>
+          <p class="my-auto ">${date}</p>
         </div>`
         parentContainer.appendChild(newDiv);
       }
@@ -46,3 +47,17 @@ for(const callButton of callButtons){
 document.getElementById("clear-btn").addEventListener('click',function(){
     document.getElementById("callHistory-Container").innerHTML="";
 })
+
+// Copy Button Feature
+let copy=0
+const copyButtons=document.getElementsByClassName("copy-btn")
+const currentCopy=document.getElementById("current-copy")
+for(const copyButton of copyButtons){
+  copyButton.addEventListener("click",function(){
+    copy++
+    currentCopy.innerText=copy;
+    alert("Copied")
+    const hotlineNumber=copyButton.parentNode.parentNode.children[3].innerText
+    navigator.clipboard.writeText(hotlineNumber)
+  })
+}

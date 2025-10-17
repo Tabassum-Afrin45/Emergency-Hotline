@@ -29,11 +29,11 @@
       <p class="text-xl font-bold text-[#006747] ml-2">Emergency<br>Service</p>
     </div>
     <div class="flex items-center gap-3">
-      <button class="btn btn-soft bg-[#41ff6b1a] rounded-3xl border-none w-22"><span id="available-hearts" class="font-bold text-lg">0</span><img
+      <button class="btn btn-soft bg-[#41ff6b1a] rounded-3xl border-none w-22"><span id="available-hearts" class="font-bold text-[17px]">0</span><img
           src="./icons/heart.png" alt="" class="h-6"></button>
-      <button class="btn btn-soft bg-[#41ff6b1a] rounded-3xl border-none w-22"><span id="available-coins" class="font-bold text-lg">100</span><img
+      <button class="btn btn-soft bg-[#41ff6b1a] rounded-3xl border-none w-22"><span id="available-coins" class="font-bold text-[17px]">100</span><img
           src="./icons/coin.png" alt="" class="h-6"></button>
-      <button class="btn btn-soft  bg-[#00a63e] rounded-3xl text-white w-22"><span>2</span>Copy</button>
+      <button class="btn btn-soft  bg-[#00a63e] rounded-3xl text-white w-22"><span id="current-copy">0</span>Copy</button>
     </div>
   </div>
 
@@ -62,7 +62,7 @@
             <p class="service-number font-bold text-2xl mt-3">999</p>
             <div class="badge bg-gray-100 p-3 rounded-xl text-gray-600">সার্বজনীন</div>
             <div class="flex justify-center gap-2 mt-4">
-              <button class="btn bg-white w-1/2 rounded-md text-[#5c5c5c] border-gray-300"><i
+              <button  class="copy-btn btn bg-white w-1/2 rounded-md text-[#5c5c5c] border-gray-300"><i
                   class="fa-regular fa-clone"></i>Copy</button>
               <button class="call-button btn btn-soft bg-[#00a63e] w-1/2 rounded-md text-white"><i
                   class="fa-solid fa-phone"></i>Call</button>
@@ -84,7 +84,7 @@
             <p class="service-number font-bold text-2xl mt-3">999</p>
             <div class="badge bg-gray-100 p-3 rounded-xl text-gray-600">পুলিশ</div>
             <div class="flex justify-center gap-2 mt-4">
-              <button class="btn bg-white w-1/2 rounded-md text-[#5c5c5c] border-gray-300"><i
+              <button  class="copy-btn btn bg-white w-1/2 rounded-md text-[#5c5c5c] border-gray-300"><i
                   class="fa-regular fa-clone"></i>Copy</button>
               <button class="call-button btn btn-soft bg-[#00a63e] w-1/2 rounded-md text-white"><i
                   class="fa-solid fa-phone"></i>Call</button>
@@ -106,7 +106,7 @@
             <p class="service-number font-bold text-2xl mt-3">999</p>
             <div class="badge bg-gray-100 p-3 rounded-xl text-gray-600">ফায়ার</div>
             <div class="flex justify-center gap-2 mt-4">
-              <button class="btn bg-white w-1/2 rounded-md text-[#5c5c5c] border-gray-300"><i
+              <button  class="copy-btn btn bg-white w-1/2 rounded-md text-[#5c5c5c] border-gray-300"><i
                   class="fa-regular fa-clone"></i>Copy</button>
               <button class="call-button btn btn-soft bg-[#00a63e] w-1/2 rounded-md text-white"><i
                   class="fa-solid fa-phone"></i>Call</button>
@@ -128,7 +128,7 @@
             <p class="service-number font-bold text-2xl mt-3">1994-999999</p>
             <div class="badge bg-gray-100 p-3 rounded-xl text-gray-600">স্বাস্থ্য</div>
             <div class="flex justify-center gap-2 mt-4">
-              <button class="btn bg-white w-1/2 rounded-md text-[#5c5c5c] border-gray-300"><i
+              <button  class="copy-btn btn bg-white w-1/2 rounded-md text-[#5c5c5c] border-gray-300"><i
                   class="fa-regular fa-clone"></i>Copy</button>
               <button class="call-button btn btn-soft bg-[#00a63e] w-1/2 rounded-md text-white"><i
                   class="fa-solid fa-phone"></i>Call</button>
@@ -150,7 +150,7 @@
             <p class="service-number font-bold text-2xl mt-3">109</p>
             <div class="badge bg-gray-100 p-3 rounded-xl text-gray-600">সহায়তা</div>
             <div class="flex justify-center gap-2 mt-4">
-              <button class="btn bg-white w-1/2 rounded-md text-[#5c5c5c] border-gray-300"><i
+              <button  class="copy-btn btn bg-white w-1/2 rounded-md text-[#5c5c5c] border-gray-300"><i
                   class="fa-regular fa-clone"></i>Copy</button>
               <button class="call-button btn btn-soft bg-[#00a63e] w-1/2 rounded-md text-white"><i
                   class="fa-solid fa-phone"></i>Call</button>
@@ -172,7 +172,7 @@
             <p class="service-number font-bold text-2xl mt-3">106</p>
             <div class="badge bg-gray-100 p-3 rounded-xl text-gray-600">সরকারি</div>
             <div class="flex justify-center gap-2 mt-4">
-              <button class="btn bg-white w-1/2 rounded-md text-[#5c5c5c] border-gray-300"><i
+              <button  class="copy-btn btn bg-white w-1/2 rounded-md text-[#5c5c5c] border-gray-300"><i
                   class="fa-regular fa-clone"></i>Copy</button>
               <button class="call-button btn btn-soft bg-[#00a63e] w-1/2 rounded-md text-white"><i
                   class="fa-solid fa-phone"></i>Call</button>
@@ -194,7 +194,7 @@
             <p class="service-number font-bold text-2xl mt-3">16216</p>
             <div class="badge bg-gray-100 p-3 rounded-xl text-gray-600">বিদ্যুৎ</div>
             <div class="flex justify-center gap-2 mt-4">
-              <button class="btn bg-white w-1/2 rounded-md text-[#5c5c5c] border-gray-300"><i
+              <button  class="copy-btn btn bg-white w-1/2 rounded-md text-[#5c5c5c] border-gray-300"><i
                   class="fa-regular fa-clone"></i>Copy</button>
               <button class="call-button btn btn-soft bg-[#00a63e] w-1/2 rounded-md text-white"><i
                   class="fa-solid fa-phone"></i>Call</button>
@@ -216,7 +216,7 @@
             <p class="service-number font-bold text-2xl mt-3">16445</p>
             <div class="badge bg-gray-100 p-3 rounded-xl text-gray-600">এনজিও</div>
             <div class="flex justify-center gap-2 mt-4">
-              <button class="btn bg-white w-1/2 rounded-md text-[#5c5c5c] border-gray-300"><i
+              <button  class="copy-btn btn bg-white w-1/2 rounded-md text-[#5c5c5c] border-gray-300"><i
                   class="fa-regular fa-clone"></i>Copy</button>
               <button class="call-button btn btn-soft bg-[#00a63e] w-1/2 rounded-md text-white"><i
                   class="fa-solid fa-phone"></i>Call</button>
@@ -238,7 +238,7 @@
             <p class="service-number font-bold text-2xl mt-3">163</p>
             <div class="badge bg-gray-100 p-3 rounded-xl text-gray-600">পরিবহন</div>
             <div class="flex justify-center gap-2 mt-4">
-              <button class="btn bg-white w-1/2 rounded-md text-[#5c5c5c] border-gray-300"><i
+              <button  class="copy-btn btn bg-white w-1/2 rounded-md text-[#5c5c5c] border-gray-300"><i
                   class="fa-regular fa-clone"></i>Copy</button>
               <button class="call-button btn btn-soft bg-[#00a63e] w-1/2 rounded-md text-white"><i
                   class="fa-solid fa-phone"></i>Call</button>
